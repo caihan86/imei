@@ -3,4 +3,8 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return HttpResponse("hello")
+    return render(request, 'login.html')
+
+
+def login(request):
+    return HttpResponse()
